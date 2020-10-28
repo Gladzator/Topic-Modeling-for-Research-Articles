@@ -1,0 +1,5 @@
+{
+    "SCIBERT_MODEL": "allenai/scibert_scivocab_uncased",
+    "PRE_TRAINED_MODEL": "assets/model.bin",
+    "MAX_SEQUENCE_LEN": 250
+}

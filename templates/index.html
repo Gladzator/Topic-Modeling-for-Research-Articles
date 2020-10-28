@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  
+  <title>Article Classification</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="{{ url_for('static', path='/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+</head>
+
+<body style="height:fit-content; width: fit-content;">
+    <div style="height:100%; width: 100%; margin: 0;" class="middle align-top">
+        <nav class="navbar navbar-dark bg-dark">
+            <a class="navbar-brand" href="/">Article Classification</a>
+        </nav>
+    <br>
+    <form class="container" role="form" method='POST' action='/'>
+        
+        {% if result %}
+        <div class="form-group"> 
+            <label for="title">Title</label>
+            <input class="form-control" id="title" type="text" name="title" value="{{ result[0] }}"><br>
+        </div>
+        <div class="form-group">
+            <label for="abstract">Abstract</label>
+            <textarea class="form-control" id="abstract" type="text" name="abstract" rows="4" cols="50" value>{{ result[1] }}</textarea><br>
+        </div>
+        <table class="table table-bordered">
+            <thead class="thead-dark">
+              <tr>
+                <th scope="col">Article</th>
+                <th scope="col">Confidence</th>
+              </tr>
+            </thead>
+            <tbody>
+                {% for key, value in result[2].items() %}
+                    <tr>
+                        <td>{{ key }}</td>
+                        <td>{{ value }}</td>
+                    </tr>
+                    {% endfor %}
+            </tbody>
+        </table><br>
+        
+        {% else %}
+        <div class="form-group"> 
+            <label for="title">Title</label>
+            <input class="form-control" id="title" type="text" name="title"><br>
+        </div>  
+        <div class="form-group"> 
+            <label for="abstract">Abstract</label>
+            <textarea class="form-control" id="abstract" type="text" name="abstract" " rows="4" cols="50"></textarea>
+        <br>
+        
+        {% endif %}
+        <button class="btn btn-primary" type="submit">Predict</button>
+    </form>
+    </div>
