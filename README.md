@@ -4,8 +4,8 @@
   * [Problem Statement](#problem-statement)
   * [Data](#data)
   * [Installation](#installation)
-  * [Approach](#approach)
   * [Directory Tree](#directory-tree)
+  * [Approach](#approach)
   * [Technologies/Libraries Used](#technologieslibraries-used)
   * [Team](#team)
 
