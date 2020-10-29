@@ -7,6 +7,7 @@
   * [Directory Tree](#directory-tree)
   * [Approach](#approach)
   * [Technologies/Libraries Used](#technologieslibraries-used)
+  * [Run](#run)
   * [Screenshots](#screenshots)
   * [Team](#team)
 
@@ -81,6 +82,15 @@ More about SciBERT can be found on this huggingface [link](https://huggingface.c
 
 I later served this model using FastAPI. To learn more about FastAPI visit [here](https://fastapi.tiangolo.com/).
 
+## Run
+Go to the root directory and type the following command in Terminal/Command Prompt
+```bash
+uvicorn article_classification.api:app
+```
+
+
+## Screenshots
+<img target="_blank" src="https://user-images.githubusercontent.com/40065133/97539408-eaa8c180-19e7-11eb-97b1-a93d8167abe1.JPG" width="45%"><img target="_blank" src="https://user-images.githubusercontent.com/40065133/97541512-4de82300-19eb-11eb-850f-00cfa3d86be2.JPG" width="45%">
 
 
 ## Technologies/Libraries Used
@@ -88,10 +98,6 @@ I later served this model using FastAPI. To learn more about FastAPI visit [here
 
 [<img target="_blank" src="https://venturebeat.com/wp-content/uploads/2019/06/pytorch-e1576624094357.jpg?w=1200&strip=all" width=100>](https://pytorch.org/)[<img target="_blank" src="https://huggingface.co/front/assets/huggingface_logo.svg" width=100>](https://huggingface.co/)[<img target="_blank" src="https://fastapi.tiangolo.com/img/logo-margin/logo-teal.png" width=100>](https://fastapi.tiangolo.com/)
 
-## Screenshots
-<img target="_blank" src="https://user-images.githubusercontent.com/40065133/97539408-eaa8c180-19e7-11eb-97b1-a93d8167abe1.JPG">
-
-<img target="_blank" src="https://user-images.githubusercontent.com/40065133/97540428-a1597180-19e9-11eb-9c58-92bdc389756a.JPG">
 
 ## Team
 <img src="https://avatars2.githubusercontent.com/u/40065133?s=460&v=4" width="200" height="200">|
