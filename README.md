@@ -6,9 +6,9 @@
   * [Installation](#installation)
   * [Directory Tree](#directory-tree)
   * [Approach](#approach)
-  * [Technologies/Libraries Used](#technologieslibraries-used)
   * [Run](#run)
   * [Screenshots](#screenshots)
+  * [Technologies/Libraries Used](#technologieslibraries-used)
   * [Team](#team)
 
 ## Problem Statement
