@@ -76,7 +76,7 @@ The two major parts of the project are:
   1. Model Building.
   2. Building an API which can be used to serve predictions over the browser.
 
-The very first approach to modal building I took was to train the data with the use of BERT modal. The results were alright with a micro F1 score of ~ 81%. A pre-trained model which is more suited to the task at hand would most definitely give better results. Since the data at hand was of scientific articles, SciBERT pretrained modal was going to be a better choice. I combined the title and abstract field by separating them with '[SEP]' tokena and managed to achieve a micro F1 score of ~85%.
+The very first approach to modal building I took was to train the data with the use of BERT modal. The results were alright with a micro F1 score of ~ 81%. A pre-trained model which is more suited to the task at hand would most definitely give better results. Since the data at hand was of scientific articles, SciBERT pretrained modal was going to be a better choice. I combined the title and abstract field by separating them with '[SEP]' tokens and managed to achieve a micro F1 score of ~85%.
 
 More about SciBERT can be found on this huggingface [link](https://huggingface.co/allenai/scibert_scivocab_uncased). If you wish to see my implementation of SciBERT using pytorch, you can find the same inside "modal/modal.ipynb".
 
